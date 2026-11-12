@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多风格参考案例索引 — NEOSPORIN 说明书 × 设计规范</title>
+<style>
+  :root {
+    --ink: #1d1d1f;
+    --ink-soft: #7a7a7a;
+    --canvas: #f5f5f7;
+    --card: #ffffff;
+    --hairline: #e0e0e0;
+    --primary: #0066cc;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "SF Pro Text", system-ui, -apple-system, "PingFang SC", sans-serif;
+    font-size: 17px; line-height: 1.47; letter-spacing: -0.374px;
+    color: var(--ink); background: var(--canvas);
+    max-width: 980px; margin: 0 auto; padding: 80px 24px;
+  }
+  h1 { font-size: 40px; font-weight: 600; letter-spacing: 0; margin-bottom: 8px; }
+  .sub { font-size: 21px; color: var(--ink-soft); margin-bottom: 48px; }
+  .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  a.card {
+    display: block; background: var(--card);
+    border: 1px solid var(--hairline); border-radius: 18px;
+    padding: 24px; text-decoration: none; color: var(--ink);
+    transition: transform .15s ease;
+  }
+  a.card:hover { transform: scale(1.01); }
+  .card .chip { font-size: 12px; letter-spacing: 0; color: #fff; border-radius: 9999px; padding: 3px 10px; display: inline-block; margin-bottom: 12px; }
+  .card h2 { font-size: 22px; font-weight: 600; letter-spacing: -0.374px; margin-bottom: 6px; }
+  .card p { font-size: 14px; letter-spacing: -0.224px; color: var(--ink-soft); }
+  .card .file { margin-top: 14px; font-size: 12px; letter-spacing: 0; color: var(--primary); font-family: ui-monospace, Menlo, monospace; }
+  .note { margin-top: 48px; font-size: 12px; letter-spacing: -0.12px; color: var(--ink-soft); line-height: 1.6; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+  <h1>多风格参考案例</h1>
+  <p class="sub">同一份 NEOSPORIN® 止痛多肽抗菌软膏说明书内容 × 四套设计规范</p>
+  <div class="grid">
+    <a class="card" href="../apple-demo/neosporin.html">
+      <span class="chip" style="background:#0066cc;">Apple</span>
+      <h2>摄影优先的美术馆陈列</h2>
+      <p>白色/羊皮纸/近黑画布交替 · 单一 Action Blue · 负字距标题 · 唯一产品投影</p>
+      <span class="file">examples/apple-demo/neosporin.html</span>
+    </a>
+    <a class="card" href="nintendo-2001.html">
+      <span class="chip" style="background:#7a8aba;">Nintendo 2001</span>
+      <h2>Y2K 游戏机面板</h2>
+      <p>黄铜鸭绿金属板 · 碳黑半调点阵 · 暖色仅作前进信号 · 描边大字 · 固定画布</p>
+      <span class="file">examples/neosporin-styles/nintendo-2001.html</span>
+    </a>
+    <a class="card" href="linear.html">
+      <span class="chip" style="background:#5e6ad2;">Linear</span>
+      <h2>近黑软件工艺文档</h2>
+      <p>#010102 画布 · 表面阶梯 · 发丝边框 · 稀缺薰衣草蓝 · 8px 圆角 CTA</p>
+      <span class="file">examples/neosporin-styles/linear.html</span>
+    </a>
+    <a class="card" href="starbucks.html">
+      <span class="chip" style="background:#006241;">Starbucks</span>
+      <h2>温暖奶油色零售旗舰</h2>
+      <p>暖奶油画布 · 四层绿体系 · 50px 全胶囊按钮 · 分层轻阴影 · Frap 悬浮钮</p>
+      <span class="file">examples/neosporin-styles/starbucks.html</span>
+    </a>
+  </div>
+  <p class="note">
+    所有页面均为单文件 HTML，无外部依赖，浏览器直接打开即可。内容忠实整理自说明书原文，均标注了"非官方演示页"声明。
+    规范来源：awesome-design-md/design-md/{apple, nintendo-2001, linear.app, starbucks}/DESIGN.md。
+  </p>
+</body>
+</html>

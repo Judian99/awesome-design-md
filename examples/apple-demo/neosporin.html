@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEOSPORIN® 止痛多肽抗菌软膏 — Apple 风格产品页示例</title>
+<style>
+  /* ============================================================
+     Apple 风格产品页 — 内容来源：NEOSPORIN® 止痛多肽抗菌软膏说明书
+     规范来源：awesome-design-md/design-md/apple/DESIGN.md
+     ============================================================ */
+
+  :root {
+    /* colors */
+    --primary: #0066cc;
+    --primary-focus: #0071e3;
+    --primary-on-dark: #2997ff;
+    --ink: #1d1d1f;
+    --body-on-dark: #ffffff;
+    --body-muted: #cccccc;
+    --ink-muted-80: #333333;
+    --ink-muted-48: #7a7a7a;
+    --divider-soft: #f0f0f0;
+    --hairline: #e0e0e0;
+    --canvas: #ffffff;
+    --canvas-parchment: #f5f5f7;
+    --surface-pearl: #fafafc;
+    --surface-tile-1: #272729;
+    --surface-tile-2: #2a2a2c;
+    --surface-tile-3: #252527;
+    --surface-black: #000000;
+    --on-primary: #ffffff;
+
+    /* rounded */
+    --r-sm: 8px;
+    --r-lg: 18px;
+    --r-pill: 9999px;
+
+    /* spacing */
+    --sp-xs: 8px;
+    --sp-sm: 12px;
+    --sp-lg: 24px;
+    --sp-xl: 32px;
+    --sp-xxl: 48px;
+    --sp-section: 80px;
+
+    /* 唯一投影：仅用于产品渲染 */
+    --product-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px 0;
+
+    --font-display: "SF Pro Display", system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+    --font-text: "SF Pro Text", system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-text);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47;
+    letter-spacing: -0.374px;
+    color: var(--ink);
+    background: var(--canvas);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- 排版 ---------- */
+  .hero-display {
+    font-family: var(--font-display);
+    font-size: 56px; font-weight: 600; line-height: 1.07; letter-spacing: -0.28px;
+  }
+  .display-lg {
+    font-family: var(--font-display);
+    font-size: 40px; font-weight: 600; line-height: 1.1; letter-spacing: 0;
+  }
+  .lead {
+    font-family: var(--font-display);
+    font-size: 28px; font-weight: 400; line-height: 1.14; letter-spacing: 0.196px;
+  }
+  .tagline {
+    font-family: var(--font-display);
+    font-size: 21px; font-weight: 600; line-height: 1.19; letter-spacing: 0.231px;
+  }
+  .caption { font-size: 14px; line-height: 1.43; letter-spacing: -0.224px; }
+  .caption-strong { font-size: 14px; font-weight: 600; letter-spacing: -0.224px; line-height: 1.29; }
+  .fine-print { font-size: 12px; line-height: 1.5; letter-spacing: -0.12px; }
+
+  /* ---------- 按钮 ---------- */
+  .btn {
+    display: inline-block; border: none; cursor: pointer;
+    text-decoration: none; transition: transform 0.15s ease;
+  }
+  .btn:active { transform: scale(0.95); }
+  .btn:focus-visible { outline: 2px solid var(--primary-focus); outline-offset: 2px; }
+  .btn-primary {
+    background: var(--primary); color: var(--on-primary);
+    font-size: 17px; border-radius: var(--r-pill); padding: 11px 22px;
+  }
+  .btn-secondary {
+    background: transparent; color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: 17px; border-radius: var(--r-pill); padding: 11px 22px;
+  }
+
+  /* ---------- 全局导航 ---------- */
+  .global-nav {
+    background: var(--surface-black); height: 44px;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .global-nav .inner {
+    max-width: 1024px; margin: 0 auto; height: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--sp-lg);
+  }
+  .global-nav ul { display: flex; align-items: center; gap: 28px; list-style: none; }
+  .global-nav a {
+    color: rgba(255,255,255,0.85); text-decoration: none;
+    font-size: 12px; letter-spacing: -0.12px;
+  }
+  .global-nav a:hover { color: #fff; }
+  .global-nav .logo { font-size: 16px; }
+
+  /* ---------- 磨砂子导航 ---------- */
+  .sub-nav {
+    position: sticky; top: 44px; z-index: 90; height: 52px;
+    background: rgba(245,245,247,0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+  .sub-nav .inner {
+    max-width: 1024px; margin: 0 auto; height: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--sp-lg);
+  }
+  .sub-nav .links { display: flex; gap: var(--sp-xl); }
+  .sub-nav .links a {
+    color: var(--ink); text-decoration: none;
+    font-size: 14px; letter-spacing: -0.224px;
+  }
+  .sub-nav .links a:hover { color: var(--primary); }
+  .sub-nav .btn-primary { font-size: 14px; padding: 8px 16px; }
+
+  /* ---------- 产品瓦片 ---------- */
+  .tile { text-align: center; padding: var(--sp-section) var(--sp-lg); }
+  .tile-light { background: var(--canvas); color: var(--ink); }
+  .tile-parchment { background: var(--canvas-parchment); color: var(--ink); }
+  .tile-dark { background: var(--surface-tile-1); color: var(--body-on-dark); }
+  .tile-dark-2 { background: var(--surface-tile-2); color: var(--body-on-dark); }
+
+  .tile .tagline { margin: var(--sp-xs) 0 var(--sp-lg); }
+  .tile-dark .tagline, .tile-dark-2 .tagline { color: var(--body-muted); }
+  .cta-row { display: flex; gap: var(--sp-lg); justify-content: center; margin-top: var(--sp-lg); flex-wrap: wrap; }
+  .tile a.text-link { color: var(--primary); text-decoration: none; font-size: 17px; }
+  .tile a.text-link:hover { text-decoration: underline; }
+  .tile-dark a.text-link, .tile-dark-2 a.text-link { color: var(--primary-on-dark); }
+
+  /* ---------- 产品渲染：软膏管（CSS 示意，唯一投影） ---------- */
+  .product-stage { margin: var(--sp-xxl) auto 0; display: flex; justify-content: center; }
+  .tube {
+    width: 130px; height: 320px; position: relative;
+    filter: drop-shadow(var(--product-shadow));
+  }
+  .tube .cap {
+    width: 44px; height: 34px; margin: 0 auto;
+    background: linear-gradient(90deg, #6e6e73, #aeaeb2 45%, #6e6e73);
+    border-radius: 6px 6px 3px 3px;
+  }
+  .tube .neck {
+    width: 26px; height: 16px; margin: 0 auto;
+    background: #d2d2d7;
+  }
+  .tube .body {
+    width: 100px; height: 260px; margin: 0 auto;
+    background: linear-gradient(90deg, #d9d9de 0%, #f5f5f7 35%, #ffffff 50%, #ececf0 70%, #c9c9cf 100%);
+    border-radius: 10px 10px 48% 48%;
+    display: flex; flex-direction: column; align-items: center;
+    padding-top: 36px; gap: 6px;
+  }
+  .tube .brand {
+    font-family: var(--font-display);
+    font-size: 15px; font-weight: 600; letter-spacing: 0.231px;
+    color: var(--primary);
+  }
+  .tube .sub {
+    font-size: 9px; letter-spacing: 0; color: var(--ink-muted-80);
+    text-align: center; line-height: 1.3;
+  }
+  .tube .rule { width: 56px; height: 1px; background: #aeaeb2; margin: 4px 0; }
+
+  /* ---------- 内容区通用 ---------- */
+  .content {
+    max-width: 720px; margin: var(--sp-xxl) auto 0; text-align: left;
+  }
+  .content p { margin-bottom: var(--sp-sm); }
+  .content ol, .content ul { padding-left: 1.6em; margin-bottom: var(--sp-sm); }
+  .content li { margin-bottom: var(--sp-xs); }
+
+  /* ---------- 成分卡片网格 ---------- */
+  .utility-section { background: var(--canvas-parchment); padding: var(--sp-section) var(--sp-lg); }
+  .utility-section .section-head { max-width: 1440px; margin: 0 auto var(--sp-xl); text-align: center; }
+  .utility-grid {
+    max-width: 1000px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  }
+  .utility-card {
+    background: var(--canvas);
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-lg);
+    padding: var(--sp-lg);
+    text-align: center;
+  }
+  .utility-card .glyph { font-size: 32px; margin-bottom: var(--sp-sm); }
+  .utility-card h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.374px; margin-bottom: 4px; }
+  .utility-card p { font-size: 14px; line-height: 1.43; letter-spacing: -0.224px; color: var(--ink-muted-80); }
+
+  /* ---------- 数字步骤（用法用量） ---------- */
+  .steps { counter-reset: step; }
+  .steps li {
+    list-style: none; counter-increment: step;
+    display: flex; gap: var(--sp-lg); align-items: flex-start;
+    margin-bottom: var(--sp-xl);
+  }
+  .steps li::before {
+    content: counter(step);
+    flex: 0 0 auto;
+    width: 44px; height: 44px;
+    background: var(--surface-tile-1); color: var(--body-on-dark);
+    border-radius: var(--r-pill);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-display);
+    font-size: 21px; font-weight: 600; letter-spacing: 0;
+  }
+
+  /* ---------- 警示卡（黑底细字，Dark utility 语法） ---------- */
+  .warn-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; text-align: left; }
+  .warn-card {
+    background: var(--surface-tile-3);
+    border-radius: var(--r-sm);
+    padding: var(--sp-lg);
+  }
+  .warn-card h3 { font-size: 14px; font-weight: 600; letter-spacing: -0.224px; color: var(--primary-on-dark); margin-bottom: var(--sp-xs); }
+  .warn-card p, .warn-card li { font-size: 14px; line-height: 1.43; letter-spacing: -0.224px; color: var(--body-muted); }
+  .warn-card ul { padding-left: 1.4em; margin-top: var(--sp-xs); }
+
+  /* ---------- 页脚 ---------- */
+  footer { background: var(--canvas-parchment); color: var(--ink-muted-80); padding: 64px var(--sp-lg) var(--sp-xl); }
+  footer .inner { max-width: 1024px; margin: 0 auto; }
+  footer .legal-note {
+    font-size: 12px; letter-spacing: -0.12px; color: var(--ink-muted-48);
+    padding-bottom: var(--sp-lg);
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: var(--sp-xl);
+  }
+  .footer-cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-xl); }
+  .footer-cols h4 { font-size: 14px; font-weight: 600; letter-spacing: -0.224px; color: var(--ink); margin-bottom: var(--sp-sm); }
+  .footer-cols ul { list-style: none; }
+  .footer-cols li { font-size: 17px; line-height: 2.41; }
+  .footer-cols a { color: var(--ink-muted-80); text-decoration: none; }
+  .footer-cols a:hover { color: var(--primary); text-decoration: underline; }
+  .footer-bottom {
+    margin-top: var(--sp-xxl); font-size: 12px; color: var(--ink-muted-48);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: var(--sp-sm);
+    border-top: 1px solid var(--hairline); padding-top: var(--sp-lg);
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width: 1068px) { .hero-display { font-size: 40px; } }
+  @media (max-width: 834px) {
+    .global-nav ul.menu { display: none; }
+    .sub-nav .links { display: none; }
+    .utility-grid { grid-template-columns: repeat(2, 1fr); }
+    .warn-grid { grid-template-columns: 1fr; }
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .hero-display { font-size: 34px; }
+    .display-lg { font-size: 32px; }
+    .tile { padding: var(--sp-xxl) var(--sp-lg); }
+    .utility-grid { grid-template-columns: 1fr; }
+    .cta-row { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- 全局导航：纯黑 44px -->
+<nav class="global-nav">
+  <div class="inner">
+    <a class="logo" href="#" aria-label="首页">⌘</a>
+    <ul class="menu">
+      <li><a href="#overview">产品</a></li>
+      <li><a href="#benefits">功效</a></li>
+      <li><a href="#ingredients">成分</a></li>
+      <li><a href="#usage">用法</a></li>
+      <li><a href="#warnings">注意事项</a></li>
+    </ul>
+    <ul>
+      <li><a href="#" aria-label="搜索">⌕</a></li>
+      <li><a href="#" aria-label="购物袋">☂</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- 磨砂子导航 -->
+<div class="sub-nav">
+  <div class="inner">
+    <span class="tagline">NEOSPORIN®</span>
+    <nav class="links">
+      <a href="#overview">概览</a>
+      <a href="#ingredients">成分</a>
+      <a href="#usage">用法用量</a>
+      <a href="#warnings">注意事项</a>
+    </nav>
+    <a class="btn btn-primary" href="#storage">0.5 盎司</a>
+  </div>
+</div>
+
+<!-- 主视觉瓦片：浅色 -->
+<section class="tile tile-light" id="overview">
+  <h1 class="hero-display">NEOSPORIN®</h1>
+  <p class="tagline">止痛多肽抗菌软膏 · 24 小时创面防护</p>
+  <div class="cta-row">
+    <a class="btn btn-primary" href="#usage">查看用法</a>
+    <a class="btn btn-secondary" href="#ingredients">了解成分</a>
+  </div>
+  <div class="product-stage">
+    <div class="tube" role="img" aria-label="NEOSPORIN 止痛多肽抗菌软膏产品渲染示意">
+      <div class="cap"></div>
+      <div class="neck"></div>
+      <div class="body">
+        <div class="brand">NEOSPORIN®</div>
+        <div class="sub">止痛多肽<br>抗菌软膏</div>
+        <div class="rule"></div>
+        <div class="sub">0.5 oz（14.2 g）</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 深色瓦片：主要功效 -->
+<section class="tile tile-dark" id="benefits">
+  <h2 class="display-lg">急救防感染，温和止痛</h2>
+  <p class="tagline">一管两效：抗菌防护 + 局部镇痛</p>
+  <div class="content" style="text-align:center; color: var(--body-muted);">
+    <p><strong style="color:var(--body-on-dark)">急救防感染</strong> — 提供长达 24 小时的创面抗菌防护，预防轻微外伤感染。</p>
+    <p><strong style="color:var(--body-on-dark)">暂时止痛舒缓</strong> — 有效缓解轻微割伤、擦伤、烧烫伤引起的局部疼痛与不适，温和配方，无刺痛感。</p>
+  </div>
+  <div class="cta-row">
+    <a class="text-link" href="#ingredients">查看活性成分 ›</a>
+  </div>
+</section>
+
+<!-- 羊皮纸瓦片：成分卡片 -->
+<section class="utility-section" id="ingredients">
+  <div class="section-head">
+    <h2 class="display-lg">活性成分</h2>
+    <p class="tagline" style="margin-top: var(--sp-sm); color: var(--ink-muted-80);">三重抗菌 + 一重镇痛</p>
+  </div>
+  <div class="utility-grid">
+    <div class="utility-card">
+      <div class="glyph" aria-hidden="true">💊</div>
+      <h3>杆菌肽锌</h3>
+      <p>Bacitracin Zinc</p>
+    </div>
+    <div class="utility-card">
+      <div class="glyph" aria-hidden="true">🛡</div>
+      <h3>硫酸新霉素</h3>
+      <p>Neomycin Sulfate</p>
+    </div>
+    <div class="utility-card">
+      <div class="glyph" aria-hidden="true">🧬</div>
+      <h3>硫酸多粘菌素 B</h3>
+      <p>Polymyxin B Sulfate</p>
+    </div>
+    <div class="utility-card">
+      <div class="glyph" aria-hidden="true">❄️</div>
+      <h3>盐酸普拉莫星</h3>
+      <p>Pramoxine HCl · 外用镇痛成分</p>
+    </div>
+  </div>
+  <p class="caption" style="max-width: 720px; margin: var(--sp-xl) auto 0; text-align:center; color: var(--ink-muted-80);">
+    非活性成分：凡士林 / 白凡士林（Petrolatum）
+  </p>
+</section>
+
+<!-- 浅色瓦片：用法与用量 -->
+<section class="tile tile-light" id="usage">
+  <h2 class="display-lg">用法与用量</h2>
+  <p class="tagline">成人及 2 岁以上儿童 · 每日 1 至 3 次</p>
+  <div class="content">
+    <ol class="steps">
+      <li>先用温水或生理盐水清洁伤口及周围皮肤。</li>
+      <li>取少量药膏（约指尖大小的量），涂抹于患处表面。</li>
+      <li>每日涂抹 1 至 3 次。</li>
+      <li>涂抹后可根据需要使用无菌创可贴或纱布覆盖包扎。</li>
+    </ol>
+    <p class="caption-strong">2 岁以下儿童：请咨询医生后遵医嘱使用。</p>
+  </div>
+</section>
+
+<!-- 深色瓦片 2：注意事项与停用指征 -->
+<section class="tile tile-dark-2" id="warnings">
+  <h2 class="display-lg">注意事项与禁忌</h2>
+  <p class="tagline">仅供外用 · 请仔细阅读后使用</p>
+  <div class="content warn-grid" style="max-width: 900px;">
+    <div class="warn-card">
+      <h3>基本禁忌</h3>
+      <ul>
+        <li>仅供外用，切勿口服或涂入眼内。</li>
+        <li>对本品中任何成分过敏者禁用。</li>
+        <li>不可在大面积身体创面上涂抹。</li>
+      </ul>
+    </div>
+    <div class="warn-card">
+      <h3>以下严重外伤请先咨询医生</h3>
+      <ul>
+        <li>较深或穿刺性伤口（如钉子扎伤）</li>
+        <li>动物咬伤</li>
+        <li>严重 / 大面积烧烫伤</li>
+      </ul>
+    </div>
+    <div class="warn-card" style="grid-column: 1 / -1;">
+      <h3>立即停药并就医的指征</h3>
+      <ul>
+        <li>连续使用已达到 1 周仍需继续使用；</li>
+        <li>伤口状况恶化，或症状持续超过 1 周未好转；</li>
+        <li>症状好转后数日内再次复发；</li>
+        <li>局部出现皮疹或其他过敏反应（如红肿、发痒加剧）。</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta-row">
+    <a class="text-link" href="#storage">查看储存条件 ›</a>
+  </div>
+</section>
+
+<!-- 环境卡样式：儿童安全承诺 -->
+<section class="tile tile-dark" style="background: var(--surface-tile-1);">
+  <h2 class="display-lg">置于儿童接触不到的地方</h2>
+  <p class="tagline">若不慎误吞，请立即就医或联系急救中心</p>
+</section>
+
+<!-- 页脚：储存与法律信息 -->
+<footer id="storage">
+  <div class="inner">
+    <p class="legal-note">
+      本页面为 Apple 设计风格的非官方演示示例，内容整理自 NEOSPORIN® 止痛多肽抗菌软膏说明书，仅用于设计学习与研究。
+      所有商标归其权利人所有；药品使用请以正式说明书和医师、药师指导为准。
+      产品图形为 CSS 示意绘制，非真实产品渲染图。
+    </p>
+    <div class="footer-cols">
+      <div>
+        <h4>规格</h4>
+        <ul>
+          <li>0.5 盎司（14.2 克）</li>
+        </ul>
+      </div>
+      <div>
+        <h4>贮藏条件</h4>
+        <ul>
+          <li>20°C – 25°C（68°F – 77°F）</li>
+          <li>常温干燥处存放</li>
+        </ul>
+      </div>
+      <div>
+        <h4>保质期 / 批号</h4>
+        <ul>
+          <li>请查看管尾压痕处（EXP）</li>
+          <li>标注的有效截止日期</li>
+        </ul>
+      </div>
+      <div>
+        <h4>儿童安全</h4>
+        <ul>
+          <li>置于儿童接触不到的地方</li>
+          <li>误吞请立即就医</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright © 2026 · Apple 风格演示页</span>
+      <span>说明书整理 | 非官方页面 | 网站地图</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

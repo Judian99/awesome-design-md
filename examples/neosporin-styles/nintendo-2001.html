@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEOSPORIN® 说明书 — Nintendo 2001 风格示例</title>
+<style>
+  /* ============================================================
+     Nintendo.com (2001) 风格 — 依据 design-md/nintendo-2001/DESIGN.md
+     核心语言：黄铜鸭绿金属面板 + 碳黑命令层 + 暖色仅作前进信号
+     ============================================================ */
+  :root {
+    --primary: #e60012;        /* Nintendo Red */
+    --signal: #f68d1f;         /* Signal Orange：一切"前进" */
+    --amber: #ecab37;          /* Amber：工具/徽章 */
+    --nav-gold: #e48600;       /* Nav Gold：导航词 */
+    --canvas: #7a8aba;         /* Periwinkle 金属机身 */
+    --canvas-soft: #9fbee7;    /* Pale Sky */
+    --lavender: #acace7;       /* 主视觉场 */
+    --ice: #c0d5e6;
+    --periwinkle: #8ba1d4;     /* 抬升面板 */
+    --chrome-indigo: #3d4f97;  /* 斜切边框/阴影线 */
+    --muted-indigo: #60619c;
+    --platinum: #dedede;
+    --surface: #ffffff;
+    --carbon: #21242e;         /* 命令层：导航/右栏/页脚 */
+    --ink: #21242e;
+    --ink-soft: #3d4f97;
+    --on-primary: #ffffff;
+    /* bevel */
+    --bevel-top: #a8b3d9;
+    --r-none: 0; --r-xs: 2px; --r-sm: 4px; --r-md: 6px; --r-lg: 10px; --r-full: 9999px;
+    --sp-xs: 4px; --sp-sm: 8px; --sp-md: 12px; --sp-lg: 16px; --sp-xl: 24px; --sp-xxl: 32px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Arial, "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 12px; line-height: 1.4; color: var(--ink);
+    background: #5b6ca3;
+    padding: 16px 0;
+  }
+  /* 固定宽度画布（时代特征） */
+  .console {
+    width: 820px; margin: 0 auto;
+    background: var(--canvas);
+    border: 2px solid var(--chrome-indigo);
+    box-shadow: 0 0 0 1px #9aa5cc inset;
+  }
+
+  /* ---------- 面板斜切：上亮下暗的压铸塑料 ---------- */
+  .plate { background: var(--canvas); border-bottom: 2px solid var(--chrome-indigo); box-shadow: 0 1px 0 var(--bevel-top) inset, 0 -1px 0 rgba(61,79,151,.35) inset; }
+  .inset { background: var(--platinum); box-shadow: 0 1px 0 var(--chrome-indigo) inset, 0 -1px 0 var(--bevel-top) inset; }
+
+  /* ---------- 页眉：吉祥物气泡 + 搜索 ---------- */
+  .masthead { display: flex; justify-content: space-between; align-items: flex-start; padding: var(--sp-md) var(--sp-lg); }
+  .logo-pill {
+    display: inline-block; background: var(--surface); color: var(--primary);
+    font-family: "Arial Black", Arial, sans-serif; font-size: 22px; font-weight: 900;
+    border: 2px solid var(--ink); border-radius: var(--r-full); padding: 2px 16px;
+    letter-spacing: 0;
+  }
+  .mascot-row { display: flex; align-items: center; gap: var(--sp-sm); }
+  .mascot { font-size: 34px; }
+  .mascot-bubble {
+    position: relative; background: var(--surface); color: var(--carbon);
+    border: 1px solid var(--ink); border-radius: var(--r-lg); padding: var(--sp-sm);
+    font-size: 10px;
+  }
+  .mascot-bubble::before {
+    content: ""; position: absolute; left: -6px; top: 50%;
+    border: 5px solid transparent; border-right-color: var(--ink);
+    transform: translateY(-50%);
+  }
+  .search-module { display: flex; gap: 4px; align-items: center; }
+  .search-field {
+    width: 150px; height: 20px; background: var(--surface);
+    border: 1px solid var(--ink-soft); border-radius: var(--r-xs);
+    padding: 0 4px; font-size: 12px;
+  }
+  .chip-amber {
+    background: var(--amber); color: var(--carbon);
+    font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    border: none; border-radius: var(--r-xs); padding: 3px 10px; cursor: pointer;
+    box-shadow: 0 1px 0 #fff inset, 0 2px 0 var(--nav-gold);
+  }
+  .chip-amber:active { background: var(--nav-gold); }
+
+  /* ---------- 双层导航 ---------- */
+  .nav-bar {
+    height: 28px; background: var(--carbon);
+    background-image: radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px);
+    background-size: 4px 4px; /* 半调点阵：扬声器格栅 */
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--sp-md);
+  }
+  .nav-bar ul { display: flex; list-style: none; gap: 20px; align-items: center; }
+  .nav-bar a {
+    color: var(--nav-gold); text-decoration: none;
+    font-size: 13px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+  }
+  .subnav-strip {
+    background: var(--canvas-soft); border-bottom: 2px solid var(--chrome-indigo);
+    padding: var(--sp-xs) var(--sp-md);
+    display: flex; gap: var(--sp-md);
+    font-size: 11px; font-weight: 700; letter-spacing: .5px; color: var(--ink);
+  }
+  .subnav-strip span + span::before { content: "|"; color: var(--muted-indigo); margin-right: var(--sp-md); }
+
+  /* ---------- 主视觉面板：淡紫场 + 描边字 ---------- */
+  .hero-panel {
+    margin: var(--sp-lg);
+    border-radius: var(--r-md);
+    border-top: 1px solid #cdd3ef; border-bottom: 2px solid var(--chrome-indigo);
+    background:
+      radial-gradient(ellipse 70% 90% at 75% 20%, rgba(255,255,255,.28), transparent 60%),
+      var(--lavender);
+    padding: var(--sp-lg);
+    text-align: center;
+  }
+  .hero-display {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 44px; font-weight: 900; line-height: 1; color: var(--surface);
+    -webkit-text-stroke: 2px var(--carbon);
+    text-shadow: 4px 4px 0 var(--chrome-indigo);
+  }
+  .hero-tagline { font-size: 15px; font-weight: 700; color: var(--surface); text-shadow: 1px 1px 0 var(--chrome-indigo); margin-top: var(--sp-sm); }
+  .btn-arrow {
+    width: 22px; height: 22px; border-radius: var(--r-full);
+    background: var(--signal); color: var(--on-primary);
+    border: none; cursor: pointer; font-size: 12px; font-weight: 700;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 2px 0 var(--ink-soft);
+    margin-top: var(--sp-md);
+  }
+  .btn-arrow:active { transform: translateY(1px); }
+  .btn-arrow:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+  /* ---------- 双栏主体 ---------- */
+  .body-split { display: flex; gap: var(--sp-lg); padding: 0 var(--sp-lg) var(--sp-lg); align-items: flex-start; }
+  .col-main { flex: 2; min-width: 0; display: flex; flex-direction: column; gap: var(--sp-lg); }
+  .col-rail { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--sp-lg); }
+
+  .section-label-bar {
+    background: var(--canvas); padding: var(--sp-sm) var(--sp-md);
+    font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    color: var(--ink);
+    border-top: 1px solid var(--bevel-top);
+  }
+  .panel { border-radius: var(--r-md); overflow: hidden; border: 1px solid var(--ink-soft); }
+
+  .news-row {
+    background: var(--platinum); border-radius: var(--r-sm);
+    padding: var(--sp-sm); margin: var(--sp-sm);
+    display: flex; align-items: center; gap: var(--sp-sm);
+    border-bottom: 1px solid var(--chrome-indigo);
+  }
+  .news-row .headline { color: var(--ink-soft); font-weight: 700; font-size: 12px; flex: 1; }
+  .news-row .desc { color: var(--ink); font-weight: 400; font-size: 12px; }
+  .arrow-chip {
+    width: 18px; height: 18px; flex: 0 0 18px;
+    background: var(--signal); color: var(--on-primary);
+    border: none; border-radius: var(--r-xs); cursor: pointer;
+    font-size: 10px; font-weight: 700; line-height: 1;
+  }
+
+  .info-box { background: var(--surface); border-radius: var(--r-sm); padding: var(--sp-md); }
+  .info-box .tab {
+    display: inline-block; background: var(--amber); color: var(--carbon);
+    font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    padding: 2px 10px; border-radius: var(--r-xs); margin-bottom: var(--sp-sm);
+  }
+  .info-box ul { list-style: none; }
+  .info-box li { padding: 4px 0; border-bottom: 1px dotted var(--muted-indigo); }
+  .info-box li:last-child { border-bottom: none; }
+  .info-box b { color: var(--ink-soft); }
+
+  .form-panel { background: var(--platinum); padding: var(--sp-lg); }
+  .steps { list-style: none; counter-reset: nst; }
+  .steps li { counter-increment: nst; display: flex; gap: var(--sp-sm); margin-bottom: var(--sp-sm); align-items: flex-start; }
+  .steps li::before {
+    content: counter(nst);
+    width: 20px; height: 20px; flex: 0 0 20px;
+    background: var(--carbon); color: var(--canvas-soft);
+    font-size: 11px; font-weight: 700;
+    display: inline-flex; align-items: center; justify-content: center;
+    border-radius: var(--r-xs);
+  }
+  .dotted-divider { border: none; border-top: 1px dotted var(--muted-indigo); margin: var(--sp-md) 0; }
+
+  .rail-btn {
+    display: flex; align-items: center; gap: var(--sp-sm);
+    background: var(--carbon); color: var(--on-primary);
+    border: none; border-radius: 0; cursor: pointer; width: 100%;
+    padding: var(--sp-sm) var(--sp-md); font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    box-shadow: 0 1px 0 #4a4e60 inset, 0 -1px 0 #000 inset;
+    text-decoration: none;
+  }
+  .rail-btn:active { background: #343848; }
+  .rail-btn:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+  .rail-btn .ico { color: var(--amber); }
+
+  .poll-panel { background: var(--periwinkle); border-radius: var(--r-md); padding: var(--sp-md); border: 1px solid var(--ink-soft); }
+  .poll-panel p.q { font-weight: 700; margin-bottom: var(--sp-sm); }
+  .radio-row { display: flex; align-items: center; gap: var(--sp-sm); margin-bottom: 6px; }
+  .radio-dot {
+    width: 12px; height: 12px; border-radius: var(--r-full);
+    background: var(--surface); border: 1px solid var(--ink-soft);
+  }
+  .btn-submit {
+    background: var(--signal); color: var(--on-primary);
+    border: none; border-radius: var(--r-xs); cursor: pointer;
+    padding: 6px 16px; font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase;
+    box-shadow: 0 2px 0 var(--ink-soft);
+    margin-top: var(--sp-sm);
+  }
+
+  /* ---------- 警示碳黑面板 ---------- */
+  .warn-panel {
+    background: var(--carbon); color: var(--on-primary);
+    background-image: radial-gradient(rgba(255,255,255,.1) 1px, transparent 1px);
+    background-size: 4px 4px;
+    border-top: 2px solid var(--chrome-indigo);
+    padding: var(--sp-lg);
+    display: flex; gap: var(--sp-lg);
+  }
+  .warn-panel .col { flex: 1; }
+  .warn-panel h3 { font-size: 11px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--signal); margin-bottom: var(--sp-sm); }
+  .warn-panel ul { list-style: none; }
+  .warn-panel li { font-size: 12px; padding-left: 12px; position: relative; margin-bottom: 4px; color: #d8dae4; }
+  .warn-panel li::before { content: "▸"; position: absolute; left: 0; color: var(--signal); }
+  .esrb-badge {
+    display: inline-block; background: var(--amber); color: var(--carbon);
+    font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: var(--r-xs);
+    letter-spacing: .5px;
+  }
+
+  /* ---------- 页脚 ---------- */
+  .footer-bar {
+    background: var(--carbon);
+    background-image: radial-gradient(rgba(255,255,255,.14) 1px, transparent 1px);
+    background-size: 4px 4px;
+    color: var(--canvas-soft);
+    padding: var(--sp-lg);
+    display: flex; justify-content: space-between; align-items: center; gap: var(--sp-lg);
+    font-size: 10px;
+  }
+  .footer-bar a { color: var(--nav-gold); text-decoration: none; }
+
+  /* 窄窗口：双栏叠放（时代设计原为固定宽度，此为现代补丁） */
+  @media (max-width: 840px) {
+    .console { width: 100%; }
+    .body-split { flex-direction: column; }
+    .nav-bar ul.menu { display: none; }
+    .warn-panel { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="console">
+
+  <!-- 页眉 -->
+  <div class="masthead">
+    <div class="mascot-row">
+      <span class="mascot" aria-hidden="true">🧴</span>
+      <div class="mascot-bubble">欢迎来到 NEOSPORIN® 中文说明页！</div>
+    </div>
+    <div class="search-module">
+      <input class="search-field" type="text" placeholder="搜索说明内容…">
+      <button class="chip-amber">GO</button>
+    </div>
+  </div>
+
+  <!-- 主导航：碳黑 + 金色词 + 琥珀工具片 -->
+  <nav class="nav-bar">
+    <ul class="menu">
+      <li><a href="#overview">产品</a></li>
+      <li><a href="#benefits">功效</a></li>
+      <li><a href="#ingredients">成分</a></li>
+      <li><a href="#usage">用法</a></li>
+      <li><a href="#warnings">注意</a></li>
+    </ul>
+    <ul>
+      <li><button class="chip-amber">说明书</button></li>
+      <li><button class="chip-amber">常见问题</button></li>
+    </ul>
+  </nav>
+  <!-- 副导航条 -->
+  <div class="subnav-strip">
+    <span>仅供外用</span><span>成人及 2 岁以上儿童</span><span>0.5 盎司（14.2 克）</span><span>请仔细阅读说明书</span>
+  </div>
+
+  <!-- 主视觉面板 -->
+  <div class="hero-panel" id="overview">
+    <div class="hero-display">NEOSPORIN®</div>
+    <div class="hero-tagline">止痛多肽抗菌软膏 — 24 小时创面防护！</div>
+    <button class="btn-arrow" aria-label="查看用法">▶</button>
+  </div>
+
+  <!-- 双栏主体 -->
+  <div class="body-split">
+    <div class="col-main">
+
+      <!-- 主要功效 -->
+      <div class="panel plate">
+        <div class="section-label-bar">≡ 主要功效与用途</div>
+        <div class="news-row">
+          <span class="headline">急救防感染</span>
+          <span class="desc">提供长达 24 小时的创面抗菌防护，预防轻微外伤感染。</span>
+          <button class="arrow-chip" aria-label="查看成分">›</button>
+        </div>
+        <div class="news-row">
+          <span class="headline">暂时止痛舒缓</span>
+          <span class="desc">缓解轻微割伤、擦伤、烧烫伤引起的局部疼痛，温和无刺痛。</span>
+          <button class="arrow-chip" aria-label="查看成分">›</button>
+        </div>
+      </div>
+
+      <!-- 活性成分 -->
+      <div class="panel plate" id="ingredients">
+        <div class="section-label-bar">≡ 通用 / 活性成分</div>
+        <div class="info-box" style="margin: var(--sp-md);">
+          <ul>
+            <li><b>杆菌肽锌</b>（Bacitracin Zinc）— 抗菌</li>
+            <li><b>硫酸新霉素</b>（Neomycin Sulfate）— 抗菌</li>
+            <li><b>硫酸多粘菌素 B</b>（Polymyxin B Sulfate）— 抗菌</li>
+            <li><b>盐酸普拉莫星</b>（Pramoxine HCl）— 外用镇痛成分</li>
+            <li><b>非活性成分</b>：凡士林 / 白凡士林（Petrolatum）</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 用法与用量 -->
+      <div class="panel plate" id="usage">
+        <div class="section-label-bar">≡ 用法与用量（成人及 2 岁以上儿童）</div>
+        <div class="form-panel">
+          <ol class="steps">
+            <li>先用温水或生理盐水清洁伤口及周围皮肤。</li>
+            <li>取少量药膏（约指尖大小的量），涂抹于患处表面。</li>
+            <li>每日涂抹 1 至 3 次。</li>
+            <li>涂抹后可根据需要使用无菌创可贴或纱布覆盖包扎。</li>
+          </ol>
+          <hr class="dotted-divider">
+          <p style="font-weight:700;">注意：2 岁以下儿童请咨询医生后遵医嘱使用。</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 右侧行动栏 -->
+    <div class="col-rail">
+      <a class="rail-btn" href="#usage"><span class="ico">▶</span> 查看用法</a>
+      <a class="rail-btn" href="#warnings"><span class="ico">⚠</span> 注意事项</a>
+      <a class="rail-btn" href="#storage"><span class="ico">◆</span> 储存信息</a>
+      <a class="rail-btn" href="#"><span class="ico">?</span> 咨询药师</a>
+
+      <div class="panel">
+        <div class="info-box">
+          <span class="tab">什么是 NEOSPORIN®？</span>
+          <p>一款三重抗菌 + 局部镇痛的外用软膏，用于轻微外伤后的防感染与止痛舒缓。规格 0.5 盎司（14.2 克）。</p>
+        </div>
+      </div>
+
+      <div class="poll-panel">
+        <p class="q">你最想先了解哪部分？</p>
+        <div class="radio-row"><span class="radio-dot"></span>用法用量</div>
+        <div class="radio-row"><span class="radio-dot"></span>活性成分</div>
+        <div class="radio-row"><span class="radio-dot"></span>注意事项</div>
+        <button class="btn-submit">提交</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 警示碳黑面板 -->
+  <div class="warn-panel" id="warnings">
+    <div class="col">
+      <h3>注意事项与禁忌</h3>
+      <ul>
+        <li>仅供外用：切勿口服或涂入眼内。</li>
+        <li>对本品中任何成分过敏者禁用。</li>
+        <li>不可在大面积身体创面上涂抹。</li>
+        <li>较深/穿刺性伤口、动物咬伤、严重烧烫伤：请先咨询医生。</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>立即停药并就医</h3>
+      <ul>
+        <li>连续使用已达 1 周仍需继续使用；</li>
+        <li>伤口恶化或症状超过 1 周未好转；</li>
+        <li>症状好转后数日内复发；</li>
+        <li>出现皮疹或过敏反应（红肿、发痒加剧）。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="footer-bar" id="storage">
+    <span>© 2001 风格演示页 · NEOSPORIN® 中文说明书整理 · 仅供设计学习</span>
+    <span>
+      <span class="esrb-badge">OTC · 外用药品</span>
+      <a href="#" style="margin-left:12px;">隐私</a>
+    </span>
+  </div>
+</div>
+</body>
+</html>
