@@ -1,0 +1,1430 @@
+[
+  {
+    "slug": "1win",
+    "name": "1win",
+    "category": "企业 / 其他品牌",
+    "file": "1win.html",
+    "spec": "design-md/1win/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "none",
+    "summary": "近黑底高密度游戏卡片，绿蓝双色行动按钮",
+    "colors": {
+      "bg": "#141415",
+      "surface": "#2e3035",
+      "text": "#f0f2f5",
+      "accent": "#00b24b",
+      "accent2": "#0075ff"
+    }
+  },
+  {
+    "slug": "airbnb",
+    "name": "Airbnb",
+    "category": "企业 / 其他品牌",
+    "file": "airbnb.html",
+    "spec": "design-md/airbnb/DESIGN.md",
+    "layout": "masonry",
+    "effect": "shadow",
+    "summary": "白底摄影房源卡片，Rausch粉红按钮与胶囊搜索",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#222222",
+      "accent": "#ff385c",
+      "accent2": "#ff385c"
+    }
+  },
+  {
+    "slug": "airtable",
+    "name": "Airtable",
+    "category": "开发者工具 / 云服务",
+    "file": "airtable.html",
+    "spec": "design-md/airtable/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "白底编辑留白，近黑按钮与珊瑚深绿签名卡",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f8fafc",
+      "text": "#181d26",
+      "accent": "#181d26",
+      "accent2": "#aa2d00"
+    }
+  },
+  {
+    "slug": "aljazeera",
+    "name": "Al Jazeera",
+    "category": "媒体 / 内容",
+    "file": "aljazeera.html",
+    "spec": "design-md/aljazeera/DESIGN.md",
+    "layout": "editorial",
+    "effect": "paper",
+    "summary": "白报纸式密集新闻网格，橙色栏签与直播红标记",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f0f0f0",
+      "text": "#000000",
+      "accent": "#fa9000",
+      "accent2": "#c31833"
+    }
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "category": "科技公司 / 产品",
+    "file": "apple.html",
+    "spec": "design-md/apple/DESIGN.md",
+    "layout": "center",
+    "effect": "none",
+    "summary": "产品摄影居中陈列，白黑分屏与蓝色胶囊按钮",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#1d1d1f",
+      "accent": "#0066cc",
+      "accent2": "#0066cc"
+    }
+  },
+  {
+    "slug": "binance",
+    "name": "Binance",
+    "category": "金融 / 支付",
+    "file": "binance.html",
+    "spec": "design-md/binance/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "none",
+    "summary": "近黑交易仪表盘，币安黄CTA与红绿行情数据",
+    "colors": {
+      "bg": "#0b0e11",
+      "surface": "#1e2329",
+      "text": "#ffffff",
+      "accent": "#fcd535",
+      "accent2": "#0ecb81"
+    }
+  },
+  {
+    "slug": "bmw",
+    "name": "BMW",
+    "category": "汽车 / 出行",
+    "file": "bmw.html",
+    "spec": "design-md/bmw/DESIGN.md",
+    "layout": "luxury",
+    "effect": "none",
+    "summary": "白底汽车网格，宝马蓝直角按钮与深藏青首屏",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#fafafa",
+      "text": "#262626",
+      "accent": "#1c69d4",
+      "accent2": "#e22718"
+    }
+  },
+  {
+    "slug": "bmw-m",
+    "name": "BMW M",
+    "category": "汽车 / 出行",
+    "file": "bmw-m.html",
+    "spec": "design-md/bmw-m/DESIGN.md",
+    "layout": "luxury",
+    "effect": "stripes",
+    "summary": "纯黑赛车摄影，白色粗体标题与M三色条纹",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#1a1a1a",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#e22718"
+    }
+  },
+  {
+    "slug": "bugatti",
+    "name": "Bugatti",
+    "category": "汽车 / 出行",
+    "file": "bugatti.html",
+    "spec": "design-md/bugatti/DESIGN.md",
+    "layout": "luxury",
+    "effect": "outline",
+    "summary": "纯黑奢华留白，宽字距衬线正文与白色描边胶囊",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#141414",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#c3d9f3"
+    }
+  },
+  {
+    "slug": "cal",
+    "name": "Cal.com",
+    "category": "企业 / 其他品牌",
+    "file": "cal.html",
+    "spec": "design-md/cal/DESIGN.md",
+    "layout": "split",
+    "effect": "shadow",
+    "summary": "白底灰卡日程组件，紧字距标题与黑色按钮",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f5f5f5",
+      "text": "#111111",
+      "accent": "#111111",
+      "accent2": "#3b82f6"
+    }
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "category": "科技公司 / 产品",
+    "file": "claude.html",
+    "spec": "design-md/claude/DESIGN.md",
+    "layout": "editorial",
+    "effect": "paper",
+    "summary": "暖奶油纸张底色，衬线标题与珊瑚色编辑卡片",
+    "colors": {
+      "bg": "#faf9f5",
+      "surface": "#efe9de",
+      "text": "#141413",
+      "accent": "#cc785c",
+      "accent2": "#5db8a6"
+    }
+  },
+  {
+    "slug": "clay",
+    "name": "Clay",
+    "category": "企业 / 其他品牌",
+    "file": "clay.html",
+    "spec": "design-md/clay/DESIGN.md",
+    "layout": "masonry",
+    "effect": "bevel",
+    "summary": "奶油底黏土3D插画，彩色圆角卡片与圆润标题",
+    "colors": {
+      "bg": "#fffaf0",
+      "surface": "#f5f0e0",
+      "text": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "accent2": "#ff4d8b"
+    }
+  },
+  {
+    "slug": "clickhouse",
+    "name": "ClickHouse",
+    "category": "开发者工具 / 云服务",
+    "file": "clickhouse.html",
+    "spec": "design-md/clickhouse/DESIGN.md",
+    "layout": "terminal",
+    "effect": "none",
+    "summary": "近黑底电黄按钮，等宽代码卡与工程感数据布局",
+    "colors": {
+      "bg": "#0a0a0a",
+      "surface": "#1a1a1a",
+      "text": "#ffffff",
+      "accent": "#faff69",
+      "accent2": "#3b82f6"
+    }
+  },
+  {
+    "slug": "cohere",
+    "name": "Cohere",
+    "category": "开发者工具 / 云服务",
+    "file": "cohere.html",
+    "spec": "design-md/cohere/DESIGN.md",
+    "layout": "minimal",
+    "effect": "none",
+    "summary": "白底企业AI留白，深绿产品带与珊瑚研究标签",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#eeece7",
+      "text": "#212121",
+      "accent": "#17171c",
+      "accent2": "#ff7759"
+    }
+  },
+  {
+    "slug": "coinbase",
+    "name": "Coinbase",
+    "category": "金融 / 支付",
+    "file": "coinbase.html",
+    "spec": "design-md/coinbase/DESIGN.md",
+    "layout": "split",
+    "effect": "outline",
+    "summary": "暗夜金融编辑风，蓝色胶囊按钮点缀",
+    "colors": {
+      "bg": "#0a0b0d",
+      "surface": "#16181c",
+      "text": "#ffffff",
+      "accent": "#0052ff",
+      "accent2": "#f4b000"
+    }
+  },
+  {
+    "slug": "composio",
+    "name": "Composio",
+    "category": "开发者工具 / 云服务",
+    "file": "composio.html",
+    "spec": "design-md/composio/DESIGN.md",
+    "layout": "terminal",
+    "effect": "glow",
+    "summary": "近黑终端四宫格，电蓝聚光科技感",
+    "colors": {
+      "bg": "#0f0f0f",
+      "surface": "#181818",
+      "text": "#ffffff",
+      "accent": "#1a26ff",
+      "accent2": "#00d4ff"
+    }
+  },
+  {
+    "slug": "cursor",
+    "name": "Cursor",
+    "category": "科技公司 / 产品",
+    "file": "cursor.html",
+    "spec": "design-md/cursor/DESIGN.md",
+    "layout": "editorial",
+    "effect": "outline",
+    "summary": "暖白杂志式代码编辑器，橙色点睛",
+    "colors": {
+      "bg": "#f7f7f4",
+      "surface": "#ffffff",
+      "text": "#26251e",
+      "accent": "#f54e00",
+      "accent2": "#9fbbe0"
+    }
+  },
+  {
+    "slug": "dell-1996",
+    "name": "Dell 1996",
+    "category": "企业 / 其他品牌",
+    "file": "dell-1996.html",
+    "spec": "design-md/dell-1996/DESIGN.md",
+    "layout": "retro",
+    "effect": "bevel",
+    "summary": "黑框彩带目录风，粗黑体配衬线正文",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#b3bd95",
+      "text": "#ffffff",
+      "accent": "#e91d2a",
+      "accent2": "#fcc20f"
+    }
+  },
+  {
+    "slug": "dji",
+    "name": "DJI",
+    "category": "汽车 / 出行",
+    "file": "dji.html",
+    "spec": "design-md/dji/DESIGN.md",
+    "layout": "masonry",
+    "effect": "none",
+    "summary": "摄影瓷砖陈列，工程蓝胶囊按钮",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f5f5f5",
+      "text": "#262626",
+      "accent": "#0070d5",
+      "accent2": "#fa8c16"
+    }
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "AI 公司",
+    "file": "elevenlabs.html",
+    "spec": "design-md/elevenlabs/DESIGN.md",
+    "layout": "editorial",
+    "effect": "mesh",
+    "summary": "轻衬线杂志风，粉彩渐变光斑漂浮",
+    "colors": {
+      "bg": "#f5f5f5",
+      "surface": "#ffffff",
+      "text": "#0c0a09",
+      "accent": "#292524",
+      "accent2": "#c8b8e0"
+    }
+  },
+  {
+    "slug": "expo",
+    "name": "Expo",
+    "category": "开发者工具 / 云服务",
+    "file": "expo.html",
+    "spec": "design-md/expo/DESIGN.md",
+    "layout": "center",
+    "effect": "gradient",
+    "summary": "白底蓝天渐变，黑按钮与设备样机",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#171717",
+      "accent": "#000000",
+      "accent2": "#cfe7ff"
+    }
+  },
+  {
+    "slug": "ferrari",
+    "name": "Ferrari",
+    "category": "汽车 / 出行",
+    "file": "ferrari.html",
+    "spec": "design-md/ferrari/DESIGN.md",
+    "layout": "luxury",
+    "effect": "none",
+    "summary": "近黑电影大片感，赛道红锐利直角",
+    "colors": {
+      "bg": "#181818",
+      "surface": "#303030",
+      "text": "#ffffff",
+      "accent": "#da291c",
+      "accent2": "#f6e500"
+    }
+  },
+  {
+    "slug": "figma",
+    "name": "Figma",
+    "category": "科技公司 / 产品",
+    "file": "figma.html",
+    "spec": "design-md/figma/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "黑白编辑框架，巨型粉彩色块拼贴",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#dceeb1",
+      "text": "#000000",
+      "accent": "#000000",
+      "accent2": "#ff3d8b"
+    }
+  },
+  {
+    "slug": "framer",
+    "name": "Framer",
+    "category": "科技公司 / 产品",
+    "file": "framer.html",
+    "spec": "design-md/framer/DESIGN.md",
+    "layout": "masonry",
+    "effect": "gradient",
+    "summary": "纯黑海报大字，蓝链与霓虹渐变卡",
+    "colors": {
+      "bg": "#090909",
+      "surface": "#141414",
+      "text": "#ffffff",
+      "accent": "#0099ff",
+      "accent2": "#6a4cf5"
+    }
+  },
+  {
+    "slug": "hashicorp",
+    "name": "HashiCorp",
+    "category": "开发者工具 / 云服务",
+    "file": "hashicorp.html",
+    "spec": "design-md/hashicorp/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "none",
+    "summary": "黑底多产品色卡，企业基建秩序感",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#15181e",
+      "text": "#ffffff",
+      "accent": "#2b89ff",
+      "accent2": "#7b42bc"
+    }
+  },
+  {
+    "slug": "hp",
+    "name": "HP",
+    "category": "企业 / 其他品牌",
+    "file": "hp.html",
+    "spec": "design-md/hp/DESIGN.md",
+    "layout": "split",
+    "effect": "stripes",
+    "summary": "白纸商品目录，电蓝斜切符号醒目",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#1a1a1a",
+      "accent": "#024ad8",
+      "accent2": "#ff5050"
+    }
+  },
+  {
+    "slug": "ibm",
+    "name": "IBM",
+    "category": "企业 / 其他品牌",
+    "file": "ibm.html",
+    "spec": "design-md/ibm/DESIGN.md",
+    "layout": "editorial",
+    "effect": "grid",
+    "summary": "碳系直角网格，轻字重配单一亮蓝",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f4f4f4",
+      "text": "#161616",
+      "accent": "#0f62fe",
+      "accent2": "#0f62fe"
+    }
+  },
+  {
+    "slug": "intercom",
+    "name": "Intercom",
+    "category": "企业 / 其他品牌",
+    "file": "intercom.html",
+    "spec": "design-md/intercom/DESIGN.md",
+    "layout": "split",
+    "effect": "outline",
+    "summary": "奶油底产品截图主导，亮橙精准点缀",
+    "colors": {
+      "bg": "#f5f1ec",
+      "surface": "#ffffff",
+      "text": "#111111",
+      "accent": "#ff5600",
+      "accent2": "#0007cb"
+    }
+  },
+  {
+    "slug": "jobright",
+    "name": "Jobright",
+    "category": "企业 / 其他品牌",
+    "file": "jobright.html",
+    "spec": "design-md/jobright/DESIGN.md",
+    "layout": "split",
+    "effect": "shadow",
+    "summary": "薄荷色带配粗窄标题与大圆角白卡",
+    "colors": {
+      "bg": "#ecffe0",
+      "surface": "#ffffff",
+      "text": "#000000",
+      "accent": "#000000",
+      "accent2": "#00f0a0"
+    }
+  },
+  {
+    "slug": "kraken",
+    "name": "Kraken",
+    "category": "金融 / 支付",
+    "file": "kraken.html",
+    "spec": "design-md/kraken/DESIGN.md",
+    "layout": "minimal",
+    "effect": "shadow",
+    "summary": "白底品牌紫，圆角按钮与轻阴影",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#101114",
+      "accent": "#7132f5",
+      "accent2": "#5741d8"
+    }
+  },
+  {
+    "slug": "lamborghini",
+    "name": "Lamborghini",
+    "category": "汽车 / 出行",
+    "file": "lamborghini.html",
+    "spec": "design-md/lamborghini/DESIGN.md",
+    "layout": "luxury",
+    "effect": "none",
+    "summary": "纯黑影院式留白，金色锐角按钮",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#202020",
+      "text": "#FFFFFF",
+      "accent": "#FFC000",
+      "accent2": "#FFCE3E"
+    }
+  },
+  {
+    "slug": "linear.app",
+    "name": "Linear",
+    "category": "科技公司 / 产品",
+    "file": "linear.app.html",
+    "spec": "design-md/linear.app/DESIGN.md",
+    "layout": "minimal",
+    "effect": "outline",
+    "summary": "近黑层级面板，薰衣草蓝点缀产品界面",
+    "colors": {
+      "bg": "#010102",
+      "surface": "#0f1011",
+      "text": "#f7f8f8",
+      "accent": "#5e6ad2",
+      "accent2": "#828fff"
+    }
+  },
+  {
+    "slug": "lovable",
+    "name": "Lovable",
+    "category": "科技公司 / 产品",
+    "file": "lovable.html",
+    "spec": "design-md/lovable/DESIGN.md",
+    "layout": "editorial",
+    "effect": "paper",
+    "summary": "奶油纸感配人文字体与内嵌暗按钮",
+    "colors": {
+      "bg": "#f7f4ed",
+      "surface": "#f7f4ed",
+      "text": "#1c1c1c",
+      "accent": "#1c1c1c",
+      "accent2": "#3b82f6"
+    }
+  },
+  {
+    "slug": "mastercard",
+    "name": "Mastercard",
+    "category": "金融 / 支付",
+    "file": "mastercard.html",
+    "spec": "design-md/mastercard/DESIGN.md",
+    "layout": "editorial",
+    "effect": "outline",
+    "summary": "暖奶油底色，圆形肖像与橙色轨道线",
+    "colors": {
+      "bg": "#F3F0EE",
+      "surface": "#FCFBFA",
+      "text": "#141413",
+      "accent": "#141413",
+      "accent2": "#F37338"
+    }
+  },
+  {
+    "slug": "mercury",
+    "name": "Mercury",
+    "category": "金融 / 支付",
+    "file": "mercury.html",
+    "spec": "design-md/mercury/DESIGN.md",
+    "layout": "luxury",
+    "effect": "glow",
+    "summary": "墨紫夜景配轻字重与靛蓝胶囊",
+    "colors": {
+      "bg": "#171721",
+      "surface": "#1e1e2a",
+      "text": "#ededf3",
+      "accent": "#5266eb",
+      "accent2": "#9cb4e8"
+    }
+  },
+  {
+    "slug": "meta",
+    "name": "Meta",
+    "category": "AI 公司",
+    "file": "meta.html",
+    "spec": "design-md/meta/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "白底产品摄影，大圆角卡与钴蓝胶囊",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f1f4f7",
+      "text": "#0a1317",
+      "accent": "#0064e0",
+      "accent2": "#a121ce"
+    }
+  },
+  {
+    "slug": "minimax",
+    "name": "MiniMax",
+    "category": "AI 公司",
+    "file": "minimax.html",
+    "spec": "design-md/minimax/DESIGN.md",
+    "layout": "center",
+    "effect": "gradient",
+    "summary": "黑白大标题配多彩渐变产品卡",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#f7f8fa",
+      "text": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "accent2": "#ff5530"
+    }
+  },
+  {
+    "slug": "mintlify",
+    "name": "Mintlify",
+    "category": "开发者工具 / 云服务",
+    "file": "mintlify.html",
+    "spec": "design-md/mintlify/DESIGN.md",
+    "layout": "center",
+    "effect": "gradient",
+    "summary": "天空渐变首页配薄荷绿与文档卡片",
+    "colors": {
+      "bg": "#87a8c8",
+      "surface": "#ffffff",
+      "text": "#0a0a0a",
+      "accent": "#0a0a0a",
+      "accent2": "#00d4a4"
+    }
+  },
+  {
+    "slug": "miro",
+    "name": "Miro",
+    "category": "企业 / 其他品牌",
+    "file": "miro.html",
+    "spec": "design-md/miro/DESIGN.md",
+    "layout": "center",
+    "effect": "shadow",
+    "summary": "黄色品牌标记与粉彩便签式圆角卡",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#1c1c1e",
+      "accent": "#1c1c1e",
+      "accent2": "#ffd02f"
+    }
+  },
+  {
+    "slug": "mistral.ai",
+    "name": "Mistral AI",
+    "category": "AI 公司",
+    "file": "mistral.ai.html",
+    "spec": "design-md/mistral.ai/DESIGN.md",
+    "layout": "editorial",
+    "effect": "stripes",
+    "summary": "日落条纹配近衬线标题与奶油卡片",
+    "colors": {
+      "bg": "#ffa110",
+      "surface": "#fff8e0",
+      "text": "#1f1f1f",
+      "accent": "#1f1f1f",
+      "accent2": "#fa520f"
+    }
+  },
+  {
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "category": "开发者工具 / 云服务",
+    "file": "mongodb.html",
+    "spec": "design-md/mongodb/DESIGN.md",
+    "layout": "center",
+    "effect": "gradient",
+    "summary": "深青渐变配荧光绿按钮与代码卡",
+    "colors": {
+      "bg": "#001e2b",
+      "surface": "#00684a",
+      "text": "#ffffff",
+      "accent": "#00ed64",
+      "accent2": "#7b3ff2"
+    }
+  },
+  {
+    "slug": "mydealz",
+    "name": "mydealz",
+    "category": "企业 / 其他品牌",
+    "file": "mydealz.html",
+    "spec": "design-md/mydealz/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "none",
+    "summary": "灰底白卡高密度，红蓝温度投票",
+    "colors": {
+      "bg": "#f3f5f7",
+      "surface": "#ffffff",
+      "text": "#000000",
+      "accent": "#197e25",
+      "accent2": "#ce1736"
+    }
+  },
+  {
+    "slug": "nerdwallet",
+    "name": "NerdWallet",
+    "category": "金融 / 支付",
+    "file": "nerdwallet.html",
+    "spec": "design-md/nerdwallet/DESIGN.md",
+    "layout": "editorial",
+    "effect": "gradient",
+    "summary": "深绿渐变首屏，薄荷色块承载金融比较",
+    "colors": {
+      "bg": "#008254",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#9ae600",
+      "accent2": "#ddfa88"
+    }
+  },
+  {
+    "slug": "nike",
+    "name": "Nike",
+    "category": "企业 / 其他品牌",
+    "file": "nike.html",
+    "spec": "design-md/nike/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "黑白运动摄影，巨型标题与胶囊按钮",
+    "colors": {
+      "bg": "#111111",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#ed1aa0"
+    }
+  },
+  {
+    "slug": "nintendo-2001",
+    "name": "Nintendo.com (2001)",
+    "category": "游戏 / 娱乐",
+    "file": "nintendo-2001.html",
+    "spec": "design-md/nintendo-2001/DESIGN.md",
+    "layout": "retro",
+    "effect": "bevel",
+    "summary": "碳黑半调导航，金属斜面与琥珀信号",
+    "colors": {
+      "bg": "#21242e",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#ecab37",
+      "accent2": "#f68d1f"
+    }
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "科技公司 / 产品",
+    "file": "notion.html",
+    "spec": "design-md/notion/DESIGN.md",
+    "layout": "center",
+    "effect": "mesh",
+    "summary": "深蓝海线框插画，亮紫按钮配粉彩卡片",
+    "colors": {
+      "bg": "#0a1530",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#7b3ff2",
+      "accent2": "#ff64c8"
+    }
+  },
+  {
+    "slug": "nvidia",
+    "name": "NVIDIA",
+    "category": "AI 公司",
+    "file": "nvidia.html",
+    "spec": "design-md/nvidia/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "黑白工程网格，单一鲜绿按钮与角标",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#76b900",
+      "accent2": "#76b900"
+    }
+  },
+  {
+    "slug": "ollama",
+    "name": "Ollama",
+    "category": "开发者工具 / 云服务",
+    "file": "ollama.html",
+    "spec": "design-md/ollama/DESIGN.md",
+    "layout": "minimal",
+    "effect": "none",
+    "summary": "白纸文档式排版，黑色胶囊与等宽命令",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#000000",
+      "accent": "#000000",
+      "accent2": "#000000"
+    }
+  },
+  {
+    "slug": "opencode.ai",
+    "name": "OpenCode",
+    "category": "开发者工具 / 云服务",
+    "file": "opencode.ai.html",
+    "spec": "design-md/opencode.ai/DESIGN.md",
+    "layout": "terminal",
+    "effect": "none",
+    "summary": "奶油纸面终端，全等宽字体与ASCII字符",
+    "colors": {
+      "bg": "#fdfcfc",
+      "surface": "#f8f7f7",
+      "text": "#201d1d",
+      "accent": "#201d1d",
+      "accent2": "#007aff"
+    }
+  },
+  {
+    "slug": "oracle",
+    "name": "Oracle",
+    "category": "开发者工具 / 云服务",
+    "file": "oracle.html",
+    "spec": "design-md/oracle/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "暖灰色带与书卷衬线，一道金线点睛",
+    "colors": {
+      "bg": "#f1efed",
+      "surface": "#ffffff",
+      "text": "#161513",
+      "accent": "#312d2a",
+      "accent2": "#f0cc71"
+    }
+  },
+  {
+    "slug": "oura",
+    "name": "Oura",
+    "category": "企业 / 其他品牌",
+    "file": "oura.html",
+    "spec": "design-md/oura/DESIGN.md",
+    "layout": "luxury",
+    "effect": "paper",
+    "summary": "暖纸留白与细衬线，蓝色胶囊一处点睛",
+    "colors": {
+      "bg": "#f7f1e8",
+      "surface": "#ffffff",
+      "text": "#1c1b1a",
+      "accent": "#2a72de",
+      "accent2": "#af751b"
+    }
+  },
+  {
+    "slug": "pinterest",
+    "name": "Pinterest",
+    "category": "媒体 / 内容",
+    "file": "pinterest.html",
+    "spec": "design-md/pinterest/DESIGN.md",
+    "layout": "masonry",
+    "effect": "none",
+    "summary": "暖白瀑布流图片卡，红色注册按钮点睛",
+    "colors": {
+      "bg": "#fbfbf9",
+      "surface": "#f6f6f3",
+      "text": "#000000",
+      "accent": "#e60023",
+      "accent2": "#e60023"
+    }
+  },
+  {
+    "slug": "playstation",
+    "name": "PlayStation",
+    "category": "游戏 / 娱乐",
+    "file": "playstation.html",
+    "spec": "design-md/playstation/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "黑白蓝章节切换，轻字重标题配游戏大图",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#f5f7fa",
+      "text": "#ffffff",
+      "accent": "#0070d1",
+      "accent2": "#d53b00"
+    }
+  },
+  {
+    "slug": "posthog",
+    "name": "PostHog",
+    "category": "开发者工具 / 云服务",
+    "file": "posthog.html",
+    "spec": "design-md/posthog/DESIGN.md",
+    "layout": "editorial",
+    "effect": "paper",
+    "summary": "奶油纸面配刺猬涂鸦，橙黄按钮点缀",
+    "colors": {
+      "bg": "#eeefe9",
+      "surface": "#ffffff",
+      "text": "#23251d",
+      "accent": "#f7a501",
+      "accent2": "#dceaf6"
+    }
+  },
+  {
+    "slug": "raycast",
+    "name": "Raycast",
+    "category": "科技公司 / 产品",
+    "file": "raycast.html",
+    "spec": "design-md/raycast/DESIGN.md",
+    "layout": "split",
+    "effect": "stripes",
+    "summary": "近黑命令面板，白色按钮与红色斜纹",
+    "colors": {
+      "bg": "#07080a",
+      "surface": "#0d0d0d",
+      "text": "#f4f4f6",
+      "accent": "#ffffff",
+      "accent2": "#ff5757"
+    }
+  },
+  {
+    "slug": "renault",
+    "name": "Renault",
+    "category": "汽车 / 出行",
+    "file": "renault.html",
+    "spec": "design-md/renault/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "黑白汽车大片，阳光黄按钮与方正卡片",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#ffed00",
+      "accent2": "#ffed00"
+    }
+  },
+  {
+    "slug": "replicate",
+    "name": "Replicate",
+    "category": "开发者工具 / 云服务",
+    "file": "replicate.html",
+    "spec": "design-md/replicate/DESIGN.md",
+    "layout": "editorial",
+    "effect": "mesh",
+    "summary": "暖奶油杂志质感，橙色印章式点缀",
+    "colors": {
+      "bg": "#f9f7f3",
+      "surface": "#ffffff",
+      "text": "#202020",
+      "accent": "#ea2804",
+      "accent2": "#ff6a3d"
+    }
+  },
+  {
+    "slug": "resend",
+    "name": "Resend",
+    "category": "开发者工具 / 云服务",
+    "file": "resend.html",
+    "spec": "design-md/resend/DESIGN.md",
+    "layout": "editorial",
+    "effect": "glow",
+    "summary": "黑底编辑衬线，代码窗口与氛围光晕",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#0a0a0c",
+      "text": "#fcfdff",
+      "accent": "#fcfdff",
+      "accent2": "#3b9eff"
+    }
+  },
+  {
+    "slug": "revolut",
+    "name": "Revolut",
+    "category": "金融 / 支付",
+    "file": "revolut.html",
+    "spec": "design-md/revolut/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "纯黑金融画册，钴紫与超大紧排标题",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#16181a",
+      "text": "#ffffff",
+      "accent": "#4f55f1",
+      "accent2": "#00a87e"
+    }
+  },
+  {
+    "slug": "runwayml",
+    "name": "Runway",
+    "category": "AI 公司",
+    "file": "runwayml.html",
+    "spec": "design-md/runwayml/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "电影级全幅影像，隐形界面与冷灰字",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#1a1a1a",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#ffffff"
+    }
+  },
+  {
+    "slug": "sanity",
+    "name": "Sanity",
+    "category": "开发者工具 / 云服务",
+    "file": "sanity.html",
+    "spec": "design-md/sanity/DESIGN.md",
+    "layout": "terminal",
+    "effect": "outline",
+    "summary": "暗夜控制台，珊瑚红与极紧字距",
+    "colors": {
+      "bg": "#0b0b0b",
+      "surface": "#212121",
+      "text": "#ffffff",
+      "accent": "#f36458",
+      "accent2": "#55beff"
+    }
+  },
+  {
+    "slug": "sap",
+    "name": "SAP",
+    "category": "开发者工具 / 云服务",
+    "file": "sap.html",
+    "spec": "design-md/sap/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "gradient",
+    "summary": "企业应用框架，深蓝渐变与扁平横带",
+    "colors": {
+      "bg": "#022879",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#6bc0ff",
+      "accent2": "#0057d2"
+    }
+  },
+  {
+    "slug": "sentry",
+    "name": "Sentry",
+    "category": "开发者工具 / 云服务",
+    "file": "sentry.html",
+    "spec": "design-md/sentry/DESIGN.md",
+    "layout": "terminal",
+    "effect": "halftone",
+    "summary": "紫黑星空控制台，荧光绿关键词",
+    "colors": {
+      "bg": "#1f1633",
+      "surface": "#150f23",
+      "text": "#ffffff",
+      "accent": "#c2ef4e",
+      "accent2": "#fa7faa"
+    }
+  },
+  {
+    "slug": "shopify",
+    "name": "Shopify",
+    "category": "企业 / 其他品牌",
+    "file": "shopify.html",
+    "spec": "design-md/shopify/DESIGN.md",
+    "layout": "luxury",
+    "effect": "outline",
+    "summary": "电影黑场与细字，白描边及薄荷绿",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#0a0a0a",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#c1fbd4"
+    }
+  },
+  {
+    "slug": "slack",
+    "name": "Slack",
+    "category": "企业 / 其他品牌",
+    "file": "slack.html",
+    "spec": "design-md/slack/DESIGN.md",
+    "layout": "split",
+    "effect": "mesh",
+    "summary": "奶油薰衣草渐变，茄紫胶囊按钮",
+    "colors": {
+      "bg": "#f4ede4",
+      "surface": "#ffffff",
+      "text": "#1d1d1d",
+      "accent": "#4a154b",
+      "accent2": "#1264a3"
+    }
+  },
+  {
+    "slug": "spacex",
+    "name": "SpaceX",
+    "category": "汽车 / 出行",
+    "file": "spacex.html",
+    "spec": "design-md/spacex/DESIGN.md",
+    "layout": "minimal",
+    "effect": "outline",
+    "summary": "黑白航天影像，DIN大写宽字距",
+    "colors": {
+      "bg": "#000000",
+      "surface": "#0a0a0a",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#ffffff"
+    }
+  },
+  {
+    "slug": "spotify",
+    "name": "Spotify",
+    "category": "游戏 / 娱乐",
+    "file": "spotify.html",
+    "spec": "design-md/spotify/DESIGN.md",
+    "layout": "dashboard",
+    "effect": "shadow",
+    "summary": "近黑音乐座舱，绿色胶囊与重投影",
+    "colors": {
+      "bg": "#121212",
+      "surface": "#181818",
+      "text": "#ffffff",
+      "accent": "#1ed760",
+      "accent2": "#1ed760"
+    }
+  },
+  {
+    "slug": "starbucks",
+    "name": "Starbucks",
+    "category": "企业 / 其他品牌",
+    "file": "starbucks.html",
+    "spec": "design-md/starbucks/DESIGN.md",
+    "layout": "split",
+    "effect": "shadow",
+    "summary": "暖奶油咖啡馆，绿色胶囊与轻阴影",
+    "colors": {
+      "bg": "#f2f0eb",
+      "surface": "#ffffff",
+      "text": "#000000",
+      "accent": "#00754A",
+      "accent2": "#cba258"
+    }
+  },
+  {
+    "slug": "stripe",
+    "name": "Stripe",
+    "category": "金融 / 支付",
+    "file": "stripe.html",
+    "spec": "design-md/stripe/DESIGN.md",
+    "layout": "split",
+    "effect": "mesh",
+    "summary": "柔和渐变网格，细字与靛紫胶囊",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#0d253d",
+      "accent": "#533afd",
+      "accent2": "#ea2261"
+    }
+  },
+  {
+    "slug": "supabase",
+    "name": "Supabase",
+    "category": "开发者工具 / 云服务",
+    "file": "supabase.html",
+    "spec": "design-md/supabase/DESIGN.md",
+    "layout": "minimal",
+    "effect": "shadow",
+    "summary": "白底极简翡翠绿，堆叠产品界面",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#171717",
+      "accent": "#3ecf8e",
+      "accent2": "#3ecf8e"
+    }
+  },
+  {
+    "slug": "superhuman",
+    "name": "Superhuman",
+    "category": "科技公司 / 产品",
+    "file": "superhuman.html",
+    "spec": "design-md/superhuman/DESIGN.md",
+    "layout": "editorial",
+    "effect": "mesh",
+    "summary": "靛蓝人像封面，淡紫按钮与深青收尾",
+    "colors": {
+      "bg": "#1b1938",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#c9b4fa",
+      "accent2": "#0e3030"
+    }
+  },
+  {
+    "slug": "tesla",
+    "name": "Tesla",
+    "category": "汽车 / 出行",
+    "file": "tesla.html",
+    "spec": "design-md/tesla/DESIGN.md",
+    "layout": "center",
+    "effect": "none",
+    "summary": "全屏汽车摄影，居中白字与单一蓝钮",
+    "colors": {
+      "bg": "#171A20",
+      "surface": "#FFFFFF",
+      "text": "#FFFFFF",
+      "accent": "#3E6AE1",
+      "accent2": "#3E6AE1"
+    }
+  },
+  {
+    "slug": "theverge",
+    "name": "The Verge",
+    "category": "媒体 / 内容",
+    "file": "theverge.html",
+    "spec": "design-md/theverge/DESIGN.md",
+    "layout": "editorial",
+    "effect": "outline",
+    "summary": "黑底薄荷紫撞色，粗标题与圆角时间流",
+    "colors": {
+      "bg": "#131313",
+      "surface": "#2d2d2d",
+      "text": "#ffffff",
+      "accent": "#3cffd0",
+      "accent2": "#5200ff"
+    }
+  },
+  {
+    "slug": "together.ai",
+    "name": "Together AI",
+    "category": "开发者工具 / 云服务",
+    "file": "together.ai.html",
+    "spec": "design-md/together.ai/DESIGN.md",
+    "layout": "split",
+    "effect": "gradient",
+    "summary": "深青黑分栏，三色渐变带与大写等宽标签",
+    "colors": {
+      "bg": "#010120",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#ef2cc1",
+      "accent2": "#bdbbff"
+    }
+  },
+  {
+    "slug": "uber",
+    "name": "Uber",
+    "category": "汽车 / 出行",
+    "file": "uber.html",
+    "spec": "design-md/uber/DESIGN.md",
+    "layout": "split",
+    "effect": "shadow",
+    "summary": "黑白分栏，胶囊按钮与城市出行插画",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#efefef",
+      "text": "#000000",
+      "accent": "#000000",
+      "accent2": "#000000"
+    }
+  },
+  {
+    "slug": "vercel",
+    "name": "Vercel",
+    "category": "开发者工具 / 云服务",
+    "file": "vercel.html",
+    "spec": "design-md/vercel/DESIGN.md",
+    "layout": "center",
+    "effect": "mesh",
+    "summary": "近白开发者风，黑钮与多彩弥散渐变",
+    "colors": {
+      "bg": "#fafafa",
+      "surface": "#ffffff",
+      "text": "#171717",
+      "accent": "#171717",
+      "accent2": "#0070f3"
+    }
+  },
+  {
+    "slug": "vodafone",
+    "name": "Vodafone",
+    "category": "企业 / 其他品牌",
+    "file": "vodafone.html",
+    "spec": "design-md/vodafone/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "深黑海报，巨型大写白字与红色胶囊",
+    "colors": {
+      "bg": "#25282b",
+      "surface": "#ffffff",
+      "text": "#ffffff",
+      "accent": "#e60000",
+      "accent2": "#e60000"
+    }
+  },
+  {
+    "slug": "voltagent",
+    "name": "VoltAgent",
+    "category": "开发者工具 / 云服务",
+    "file": "voltagent.html",
+    "spec": "design-md/voltagent/DESIGN.md",
+    "layout": "terminal",
+    "effect": "outline",
+    "summary": "近黑文档风，电绿按钮与细线代码卡片",
+    "colors": {
+      "bg": "#101010",
+      "surface": "#1a1a1a",
+      "text": "#f2f2f2",
+      "accent": "#00d992",
+      "accent2": "#2fd6a1"
+    }
+  },
+  {
+    "slug": "warp",
+    "name": "Warp",
+    "category": "科技公司 / 产品",
+    "file": "warp.html",
+    "spec": "design-md/warp/DESIGN.md",
+    "layout": "terminal",
+    "effect": "outline",
+    "summary": "暖黑终端风，米白按钮与极紧圆角",
+    "colors": {
+      "bg": "#2b2622",
+      "surface": "#383330",
+      "text": "#f7f5f0",
+      "accent": "#f7f5f0",
+      "accent2": "#f7f5f0"
+    }
+  },
+  {
+    "slug": "webflow",
+    "name": "Webflow",
+    "category": "科技公司 / 产品",
+    "file": "webflow.html",
+    "spec": "design-md/webflow/DESIGN.md",
+    "layout": "masonry",
+    "effect": "shadow",
+    "summary": "白底黑字，五彩分类卡片与紧密圆角",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#080808",
+      "accent": "#080808",
+      "accent2": "#7a3dff"
+    }
+  },
+  {
+    "slug": "wired",
+    "name": "WIRED",
+    "category": "媒体 / 内容",
+    "file": "wired.html",
+    "spec": "design-md/wired/DESIGN.md",
+    "layout": "editorial",
+    "effect": "none",
+    "summary": "黑白杂志排版，窄衬线标题与方形按钮",
+    "colors": {
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "text": "#000000",
+      "accent": "#000000",
+      "accent2": "#057dbc"
+    }
+  },
+  {
+    "slug": "wise",
+    "name": "Wise",
+    "category": "金融 / 支付",
+    "file": "wise.html",
+    "spec": "design-md/wise/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "鼠尾草绿底，超粗标题与青柠圆角卡片",
+    "colors": {
+      "bg": "#e8ebe6",
+      "surface": "#ffffff",
+      "text": "#0e0f0c",
+      "accent": "#9fe870",
+      "accent2": "#ffc091"
+    }
+  },
+  {
+    "slug": "x.ai",
+    "name": "xAI",
+    "category": "AI 公司",
+    "file": "x.ai.html",
+    "spec": "design-md/x.ai/DESIGN.md",
+    "layout": "minimal",
+    "effect": "outline",
+    "summary": "近黑极简，白色胶囊轮廓与窄距大标题",
+    "colors": {
+      "bg": "#0a0a0a",
+      "surface": "#191919",
+      "text": "#ffffff",
+      "accent": "#ffffff",
+      "accent2": "#ff7a17"
+    }
+  },
+  {
+    "slug": "zapier",
+    "name": "Zapier",
+    "category": "科技公司 / 产品",
+    "file": "zapier.html",
+    "spec": "design-md/zapier/DESIGN.md",
+    "layout": "split",
+    "effect": "none",
+    "summary": "暖奶油底色，咖啡黑字与橙色圆角按钮",
+    "colors": {
+      "bg": "#fffefb",
+      "surface": "#f8f4f0",
+      "text": "#201515",
+      "accent": "#ff4f00",
+      "accent2": "#ff4f00"
+    }
+  }
+]

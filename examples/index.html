@@ -34,6 +34,10 @@
   .card h2 { font-size: 22px; font-weight: 600; letter-spacing: -0.374px; margin-bottom: 6px; }
   .card p { font-size: 14px; letter-spacing: -0.224px; color: var(--ink-soft); }
   .card .file { margin-top: 14px; font-size: 12px; letter-spacing: 0; color: var(--primary); font-family: ui-monospace, Menlo, monospace; }
+  .banner { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 24px; margin: 0 0 32px; border-radius: 18px; background: #1d1d1f; color: #fff; text-decoration: none; }
+  .banner strong { display: block; font-size: 22px; margin-bottom: 5px; }
+  .banner span { color: #b9b9be; font-size: 13px; }
+  .banner b { flex: none; color: #7dd3fc; font-size: 14px; }
   .note { margin-top: 48px; font-size: 12px; letter-spacing: -0.12px; color: var(--ink-soft); line-height: 1.6; }
   @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
 </style>
@@ -41,26 +45,30 @@
 <body>
   <h1>多风格参考案例</h1>
   <p class="sub">同一份 NEOSPORIN® 止痛多肽抗菌软膏说明书内容 × 四套设计规范</p>
+  <a class="banner" href="style-slides/index.html">
+    <div><strong>84 种风格 · 幻灯片图鉴</strong><span>每个风格一套独立的 4 页示例，共 336 页，支持搜索、全屏和 PDF 导出。</span></div>
+    <b>打开图鉴 →</b>
+  </a>
   <div class="grid">
-    <a class="card" href="../apple-demo/neosporin.html">
+    <a class="card" href="apple-demo/neosporin.html">
       <span class="chip" style="background:#0066cc;">Apple</span>
       <h2>摄影优先的美术馆陈列</h2>
       <p>白色/羊皮纸/近黑画布交替 · 单一 Action Blue · 负字距标题 · 唯一产品投影</p>
       <span class="file">examples/apple-demo/neosporin.html</span>
     </a>
-    <a class="card" href="nintendo-2001.html">
+    <a class="card" href="neosporin-styles/nintendo-2001.html">
       <span class="chip" style="background:#7a8aba;">Nintendo 2001</span>
       <h2>Y2K 游戏机面板</h2>
       <p>黄铜鸭绿金属板 · 碳黑半调点阵 · 暖色仅作前进信号 · 描边大字 · 固定画布</p>
       <span class="file">examples/neosporin-styles/nintendo-2001.html</span>
     </a>
-    <a class="card" href="linear.html">
+    <a class="card" href="neosporin-styles/linear.html">
       <span class="chip" style="background:#5e6ad2;">Linear</span>
       <h2>近黑软件工艺文档</h2>
       <p>#010102 画布 · 表面阶梯 · 发丝边框 · 稀缺薰衣草蓝 · 8px 圆角 CTA</p>
       <span class="file">examples/neosporin-styles/linear.html</span>
     </a>
-    <a class="card" href="starbucks.html">
+    <a class="card" href="neosporin-styles/starbucks.html">
       <span class="chip" style="background:#006241;">Starbucks</span>
       <h2>温暖奶油色零售旗舰</h2>
       <p>暖奶油画布 · 四层绿体系 · 50px 全胶囊按钮 · 分层轻阴影 · Frap 悬浮钮</p>
